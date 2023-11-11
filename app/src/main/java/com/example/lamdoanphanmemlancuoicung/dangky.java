@@ -39,6 +39,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class dangky extends AppCompatActivity {
+    //congtien
 
     EditText fullName,email,password,phone;
     Button registerBtn,goToLogin;
