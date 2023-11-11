@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.trangbanhang.trangdangky">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab"
+                android:src="@drawable/carrt"
+                android:background="@color/white"
+                android:layout_marginLeft="380dp"
+                android:layout_marginTop="13dp"
+                />
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/vectortrangbanhang"
+                android:background="@color/white"
+                android:id="@+id/vectortrangbanhang"
+                />
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="275dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/search"
+                app:searchHintIcon="@null"
+                app:queryHint="Search..."
+                android:background="@drawable/search"
+                android:layout_alignParentBottom="true"
+
+                />
+        </RelativeLayout>
+        <ViewFlipper
+            android:layout_width="380dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="30dp"
+            android:flipInterval="2000"
+            android:autoStart="true"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right">
+
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:src="@drawable/trangbanhang1"/>
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:src="@drawable/trangbanhang2"/>
+            <ImageView
+                android:layout_width="380dp"
+                android:layout_height="200dp"
+                android:src="@drawable/trangbanghang3"/>
+        </ViewFlipper>
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="30dp"
+            android:text="Khóa học"
+            android:textSize="30sp"
+            android:textColor="#484F88"
+            />
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="30dp"
+            android:text="70 khóa học"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:id="@+id/recyclerView"
+            android:scrollbars="vertical"
+            android:layout_marginTop="400dp"
+            android:layout_below="@+id/search"
+            tools:ignore="NotSibling" />
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

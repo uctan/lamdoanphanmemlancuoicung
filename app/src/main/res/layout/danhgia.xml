@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reccmtdanhgia"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_marginStart="15dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="262dp">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/edit_1"
+            />
+        <TextView
+            android:id="@+id/userdanhgia"
+            android:layout_width="210dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="100dp"
+            android:background="@null"
+            android:hint="Nguyễn Trần Duy Tân"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="45dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:progressTint="#DC0A0A"
+
+            />
+        <TextView
+            android:id="@+id/showcmt"
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="100dp"
+            android:background="@null"
+            android:hint="Phần đánh giá"
+            android:layout_marginTop="80dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>

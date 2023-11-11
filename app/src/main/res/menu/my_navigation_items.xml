@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+<item
+    android:id="@+id/nav_home"
+    android:icon="@drawable/homenhe"
+    android:title="Trang chủ"/>
+    <item
+        android:id="@+id/nav_lichsu"
+        android:icon="@drawable/archive_1"
+        android:title="Lịch sử đánh giá"/>
+    <item
+        android:id="@+id/nav_yt"
+        android:icon="@drawable/____icon__heart__1"
+        android:title="Yêu thích"/>
+    <item
+        android:id="@+id/nav_cn"
+        android:icon="@drawable/frame_1"
+        android:title="Cá nhân"/>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_dangxuat"
+                android:icon="@drawable/dangxuat"
+                android:title="Đăng Xuất"/>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,343 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView android:id="@+id/datsan"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+
+
+            <RelativeLayout android:id="@+id/page_datsan_ek1"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <View   android:id="@+id/_bg__datsan_ek2"
+                    android:background="@drawable/_bg__datsan_ek2_shape"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="393dp"
+                    android:layout_height="786dp" />
+
+                <ImageView android:id="@+id/svd_1"
+                    android:src="@drawable/svd_1"
+                    android:contentDescription="svd_1"
+                    android:layout_marginStart="167dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_width="223dp"
+                    android:layout_height="420.93dp" />
+
+                <ImageView android:id="@+id/sanA"
+                    android:background="@drawable/rectangle_39933_shape"
+                    android:contentDescription="vector_262"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="240dp"
+                    android:layout_width="110dp"
+                    android:layout_height="50dp" />
+
+                <ImageView   android:id="@+id/sanB"
+                    android:background="@drawable/rectangle_39933_shape"
+                    android:layout_marginStart="209dp"
+                    android:layout_marginTop="309dp"
+                    android:layout_width="56dp"
+                    android:layout_height="152dp" />
+
+                <ImageView
+                    android:id="@+id/sanC"
+                    android:background="@drawable/rectangle_39933_shape"
+                    android:layout_width="56dp"
+                    android:layout_height="152dp"
+                    android:layout_marginStart="277dp"
+                    android:layout_marginTop="308dp" />
+
+                <ImageView android:id="@+id/sanD"
+                    android:background="@drawable/rectangle_39933_shape"
+                    android:contentDescription="vector_263"
+                    android:layout_marginStart="220dp"
+                    android:layout_marginTop="470dp"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp" />
+
+
+                <RelativeLayout android:id="@+id/group_1667"
+                    android:layout_marginTop="635dp"
+                    android:layout_marginStart="286dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <View   android:id="@+id/_bg__group_1667_ek1"
+                        android:background="@drawable/_bg__group_1667_ek1_shape"
+                        android:layout_marginStart="-286dp"
+                        android:layout_marginTop="-635dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <View   android:id="@+id/ellipse_27"
+                        android:background="@drawable/ellipse_27_shape"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                </RelativeLayout>
+
+
+
+
+                <TextView android:id="@+id/_____t"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="315dp"
+                    android:layout_marginTop="636dp"
+                    android:layout_width="55.4dp"
+                    android:layout_height="21.4dp"
+                    android:text="@string/_____t_string"
+                    />
+
+                <TextView android:id="@+id/c_n_s_n"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="202dp"
+                    android:layout_marginTop="635dp"
+                    android:layout_width="85.4dp"
+                    android:layout_height="21.4dp"
+                    android:text="@string/c_n_s_n_string"
+                    />
+
+
+
+
+                <RelativeLayout android:id="@+id/arrow_right"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginStart="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+
+
+                </RelativeLayout>
+
+
+
+                <TextView android:id="@+id/sanbongda"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="28sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_width="196dp"
+                    android:layout_height="48.8dp"
+                    android:text="Sân 5 người"
+                    />
+
+                <View   android:id="@+id/rectangle_39935"
+                    android:background="@drawable/rectangle_39935_shape"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="272dp"
+                    android:layout_width="140dp"
+                    android:layout_height="250dp" />
+
+                <TextView android:id="@+id/batdau"
+                    android:textSize="16sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="379dp"
+                    android:layout_width="72.6dp"
+                    android:layout_height="23.6dp"
+                    android:text="@string/_8_45_pm_string"
+                    />
+
+                <TextView android:id="@+id/ch_n_gi_"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="350dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Chọn giờ bắt đầu"
+                    />
+                <TextView android:id="@+id/giohet"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="398dp"
+                    android:layout_width="71.3dp"
+                    android:layout_height="27.3dp"
+                    android:text="Giờ hết"
+                    />
+                <TextView android:id="@+id/ketthuc"
+                    android:textSize="16sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="429dp"
+                    android:layout_width="72.6dp"
+                    android:layout_height="23.6dp"
+                    android:text="@string/_8_45_pm_string"
+                    />
+                <TextView android:id="@+id/ten_san"
+                    android:textSize="16sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="459dp"
+                    android:layout_width="72.6dp"
+                    android:layout_height="23.6dp"
+                    android:text="Chọn sân"
+                    />
+                <ImageView android:id="@+id/btthuesan"
+                    android:textSize="16sp"
+                   android:src="@drawable/btsan"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="480dp"
+                    android:layout_width="159dp"
+                    android:layout_height="46dp"
+                    android:text="@string/_8_45_pm_string"
+                    />
+                <TextView android:id="@+id/giatienthuesan"
+                    android:textSize="16sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="489dp"
+                    android:layout_width="72.6dp"
+                    android:layout_height="23.6dp"
+                    android:text="@string/_8_45_pm_string"
+                    />
+
+
+
+                <TextView android:id="@+id/ch_n_ng_y"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="292dp"
+                    android:layout_width="71.3dp"
+                    android:layout_height="27.3dp"
+                    android:text="Chọn ngày"
+                    />
+
+                <ImageView android:id="@+id/giobatdau"
+                    android:src="@drawable/colorful_write_and_wipe_clock_worksheets_1"
+                    android:contentDescription="colorful_write_and_wipe_clock_worksheets_1"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="346dp"
+                    android:layout_width="25dp"
+                    android:layout_height="35.36dp" />
+                <ImageView android:id="@+id/gioketthuc"
+                    android:src="@drawable/colorful_write_and_wipe_clock_worksheets_1"
+                    android:contentDescription="colorful_write_and_wipe_clock_worksheets_1"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="390dp"
+                    android:layout_width="25dp"
+                    android:layout_height="35.36dp" />
+
+                <ImageView android:id="@+id/chongay"
+                    android:src="@drawable/chongnay"
+                    android:contentDescription="colorful_write_and_wipe_clock_worksheets_1"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="289dp"
+                    android:layout_width="25dp"
+                    android:layout_height="35.36dp" />
+                <TextView android:id="@+id/ngay"
+                    android:textSize="15sp"
+                    android:textColor="@color/_bg__group_1667_ek1_color"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="319dp"
+                    android:layout_width="110dp"
+                    android:layout_height="23.6dp"
+                    android:text="ngày"
+                    />
+
+
+
+
+
+
+
+
+
+
+                    <RelativeLayout android:id="@+id/group_696"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <View   android:id="@+id/_bg__group_696_ek1"
+                            android:background="@drawable/_bg__group_696_ek1_shape"
+                            android:layout_marginStart="-40dp"
+                            android:layout_marginTop="-446dp"
+                            android:layout_width="13.3dp"
+                            android:layout_height="18dp" />
+
+
+                        <RelativeLayout android:id="@+id/group_609"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <View   android:id="@+id/_bg__group_609_ek1"
+                                android:background="@drawable/_bg__group_609_ek1_shape"
+                                android:layout_marginStart="-40dp"
+                                android:layout_marginTop="-446dp"
+                                android:layout_width="13.3dp"
+                                android:layout_height="18dp" />
+
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <TextView android:id="@+id/__ng_k_"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal|center"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@color/_bg__datsan_ek2_color"
+                    android:layout_marginLeft="114dp"
+                    android:layout_marginTop="713dp"
+                    android:layout_width="171.4dp"
+                    android:layout_height="38.4dp"
+                    android:text="@string/__ng_k__string"
+                    />
+            <ImageButton
+                android:layout_width="370dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="670dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/button"
+                android:background="@color/white"
+                android:id="@+id/savethuesan"
+                />
+
+            </RelativeLayout>
+
+
+    </ScrollView>
+</HorizontalScrollView>

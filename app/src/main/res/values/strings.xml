@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">lamdoanpanmemlancuoicung</string>
+    <!-- giothieu strings -->
+
+    <string name="default_web_client_id">920393749872-071os385qesnoq701gnkecn4out474vu.apps.googleusercontent.com</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="sportify_string">SPORTIFY</string>
+    <string name="__n_v_i_ch_ng_t_i____c__m_t_c__th__kh_e_m_nh_m_i_ng_y_string">Đến với chúng tôi để có một cơ thể khỏe mạnh mỗi ngày</string>
+    <string name="b_t___u_string">Bắt Đầu</string>
+    <string name="t_p_luy_n_th__d_c_m_i_ng_y_string">Tập luyện thể dục mỗi ngày</string>
+
+
+    <string name="___m_t___n_s_c_kh_e_string"> Để mắt đến sức khỏe</string>
+    <string name="xem_th__thao_tr_c_ti_p_ho_c_n_i_b_t____c_m_i_tin_t_c_t___i_n_tho_i_th_ng_minh_c_a_b_n_string">Xem thể thao trực tiếp hoặc nổi bật, đọc mọi tin tức từ điện thoại thông minh của bạn</string>
+    <string name="__ng_nh_p_string">Đăng nhập</string>
+    <string name="__ng_k__t_i_kho_n_string">Đăng ký tài khoản</string>
+
+    <string name="join_string">JOIN</string>
+
+    <string name="__n_v_i_ch_ng_t_i____c__th____ng_k__kh_a_h_c_r_n_luy_n_s_c_kh_e_string">Đến với chúng tôi để có thể đăng ký khóa học rèn luyện sức khỏe</string>
+    <string name="khi___ng___v_i_c_c__i_u_kho_n_tr_n__b_n___ng___r_ng_th_ng_tin_c__nh_n_c_a_b_n_s_____c_thu_th_p__l_u_tr__v__x__l__t_i_sportify_string">Khi đồng ý với các điều khoản trên, bạn đồng ý rằng thông tin cá nhân của bạn sẽ được thu thập, lưu trữ và xử lý tại SPORTIFY</string>
+    <string name="__ng_k__t_i_kho_n_ek1_string">đăng ký tài khoản</string>
+    <string name="t_n___y____string">Tên đầy đủ </string>
+    <string name="t_n___y____ek1_string">Số điện thoại </string>
+    <string name="t_n___y____ek2_string">User đăng nhập </string>
+    <string name="t_n___y____ek3_string">Mật khẩu </string>
+
+    <string name="sign_in_string">SIGN IN</string>
+    <string name="__ng_nh_p_t_i_kho_n_string">Đăng Nhập Tài Khoản</string>
+
+    <string name="or_string">OR</string>
+
+
+    <string name="th__lo_i_string">Thể loại</string>
+    <string name="s_n_th__thao__a_n_ng_string">Sân thể thao đa năng</string>
+    <string name="see_all_ek1_string">See all</string>
+
+    <string name="_227_69_nguy_n_t__gi_n_ph__ng_12_qu_n_g__v_p_string">227/69 Nguyễn Tư Giản Phường 12 Quận Gò Vấp</string>
+    <string name="m_n_th__thao____c_y_u_th_ch_string">Môn thể thao được yêu thích</string>
+    <string name="sports_string">Sports</string>
+
+    <string name="nguy_n_tr_n_duy_t_n_string">Nguyễn Trần Duy Tân</string>
+    <string name="t_n_string">Tên</string>
+    <string name="nguy_n_tr_n_duy_t_n_ek1_string">Nguyễn Trần Duy Tân</string>
+    <string name="t_n_ek1_string">Số điê thoại</string>
+    <string name="nguy_n_tr_n_duy_t_n_ek2_string">Nguyễn Trần Duy Tân</string>
+    <string name="t_n_ek2_string">User đăng nhập</string>
+    <string name="nguy_n_tr_n_duy_t_n_ek3_string">Nguyễn Trần Duy Tân</string>
+    <string name="t_n_ek3_string">Mật khẩu</string>
+    <string name="nguy_n_tr_n_duy_t_n_ek4_string">Nguyễn Trần Duy Tân</string>
+    <string name="ch_nh_s_a_th_ng_tin_string">Chỉnh sửa thông tin</string>
+    <string name="search_string">Search</string>
+    <string name="kh_a_h_c_string">Kha hc</string>
+    <string name="_70_kh_a_h_c_string">70 kha hc</string>
+    <string name="h_c_3_bu_i_trong_m_t_tu_n_string">Hc 3 bui trong mt tun</string>
+    <string name="kh_a_h_c_cho_ng__i_c__b_n_string">Kha hc cho ngi c bn</string>
+    <string name="_2_000_000_vnd_string">2,000,000 VND</string>
+    <string name="_4_0_string">4.0</string>
+    <string name="__16__string">(16)</string>
+
+
+    <string name="x_c_nh_n_th_ng_tin_string">Xác nhận thông tin</string>
+    <string name="x_c_nh_n_string">Xác nhận</string>
+    <string name="t_ng_thanh_to_n_string">Tổng thanh toán</string>
+    <string name="_30_000_000vnd_string">30,000,000VND</string>
+
+
+    <string name="_____t_string"> t</string>
+    <string name="c_n_s_n_string">Cn Sn</string>
+    <string name="s_n_5_ng__i_string">Sn 5 ngi</string>
+    <string name="_8_45_pm_string">8:45 pm</string>
+    <string name="ch_n_gi__string">Chn Gi</string>
+    <string name="ch_n_ng_y_string">Chn Ngy</string>
+    <string name="__ng_k__string">ng K</string>
+
+</resources>

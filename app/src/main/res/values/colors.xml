@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F2F2F4</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="_bg__giothieu_ek2_color">#FFFFFF</color>
+    <color name="ellipse_1_color">#484F88</color>
+    <color name="sportify_color">#150000</color>
+    <color name="__n_v_i_ch_ng_t_i____c__m_t_c__th__kh_e_m_nh_m_i_ng_y_color">#000000</color>
+
+    <color name="_bg__gioithieu2_ek2_color">#FFFFFF</color>
+    <color name="__ng_k__t_i_kho_n_color">#000000</color>
+
+    <color name="_bg__dangky_ek2_color">#FFFFFF</color>
+    <color name="rectangle_39945_color">#484F88</color>
+    <color name="khi___ng___v_i_c_c__i_u_kho_n_tr_n__b_n___ng___r_ng_th_ng_tin_c__nh_n_c_a_b_n_s_____c_thu_th_p__l_u_tr__v__x__l__t_i_sportify_color">#5B5757</color>
+    <color name="rectangle_39946_color">#D9D9D9</color>
+    <color name="t_n___y____color">#A8A8A8</color>
+
+    <color name="_bg__dangnhap_ek2_color">#FFFFFF</color>
+
+    <color name="or_color">#5B5757</color>
+    <color name="line_18_color">#000000</color>
+    <color name="rectangle_39950_color">#D9D9D9</color>
+
+
+    <color name="_bg__trangchu_ek2_color">#FFFFFF</color>
+    <color name="line_15_color">#F0EDE6</color>
+    <color name="rectangle_5917_color">#D9D9D9</color>
+    <color name="th__lo_i_color">#212121</color>
+    <color name="see_all_ek1_color">#6D6D6D</color>
+
+    <color name="_227_69_nguy_n_t__gi_n_ph__ng_12_qu_n_g__v_p_color">#454545</color>
+    <color name="rectangle_39951_color">#484F88</color>
+    <color name="sports_color">#16181C</color>
+    <color name="rectangle_39952_color">#F7F7F8</color>
+
+    <color name="_bg__frame_43973_ek2_color">#FFFFFF</color>
+    <color name="ellipse_161_color">#484F88</color>
+
+    <color name="_bg__mua_h_ng_ek2_color">#FFFFFF</color>
+    <color name="search_color">#A4A4A4</color>
+    <color name="kh_a_h_c_color">#484F88</color>
+    <color name="_70_kh_a_h_c_color">#22222E</color>
+    <color name="h_c_3_bu_i_trong_m_t_tu_n_color">#5E606B</color>
+    <color name="kh_a_h_c_cho_ng__i_c__b_n_color">#151D39</color>
+    <color name="_4_0_color">#272727</color>
+    <color name="__16__color">#9C9EAA</color>
+
+    <color name="t_n_color">#000000</color>
+
+    <color name="_bg__xacnhan_ek2_color">#F3F5FF</color>
+    <color name="rectangle_39937_color">#484F88</color>
+    <color name="x_c_nh_n_th_ng_tin_color">#FFFFFF</color>
+    <color name="t_n_thu__s_n_color">#4A4B56</color>
+    <color name="t_ng_thanh_to_n_color">#000000</color>
+    <color name="my_color">#484F88</color>
+    <color name="my_color1">#D9D9D9</color>
+
+
+    <color name="_bg__datsan_ek2_color">#FFFFFF</color>
+    <color name="rectangle_39932_color">#84CF98</color>
+    <color name="rectangle_39933_color">#D9D9D9</color>
+    <color name="_bg__group_1667_ek1_color">#000000</color>
+    <color name="ellipse_27_ek1_color">#F0EDE6</color>
+
+</resources>

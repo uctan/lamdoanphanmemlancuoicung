@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="370dp"
+    android:layout_height="262dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recCard"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_marginStart="30dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="262dp"
+
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="370dp"
+            android:layout_height="159dp"
+            android:id="@+id/recImage"
+            android:layout_marginStart="7dp"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banhang"
+            />
+        <TextView
+            android:layout_width="306dp"
+            android:layout_height="24dp"
+            android:id="@+id/recTitle"
+            android:layout_marginTop="160dp"
+            android:textSize="16sp"
+            android:layout_marginStart="5dp"
+            android:text="Khoa hoc danh cho nguoi co ban"
+            android:textStyle="bold"
+            />
+        <RelativeLayout
+            android:layout_width="76dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="190dp"
+            android:layout_marginStart="5dp"
+            >
+            <ImageButton
+                android:id="@+id/favoriteIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/start"
+                />
+            <TextView
+                android:layout_width="27dp"
+                android:layout_height="21dp"
+                android:text="4.0"
+                android:layout_marginStart="25dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                />
+            
+        </RelativeLayout>
+        <TextView
+            android:layout_width="227dp"
+            android:layout_height="21dp"
+            android:text="Học 3 buổi trong một tuần"
+            android:layout_marginTop="190dp"
+            android:layout_marginStart="175dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:alpha="0.7"
+            />
+        <TextView
+            android:id="@+id/recLang"
+            android:layout_width="227dp"
+            android:layout_height="21dp"
+            android:text="2.000.000 VND"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="7dp"
+
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:alpha="0.7"
+            />
+
+        
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

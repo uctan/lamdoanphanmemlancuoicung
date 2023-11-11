@@ -1,0 +1,224 @@
+
+
+
+<ScrollView android:id="@+id/dangky"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+
+
+        <RelativeLayout android:id="@+id/page_dangky_ek1"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <View   android:id="@+id/_bg__dangky_ek2"
+                android:background="@drawable/_bg__dangky_ek2_shape"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="433dp"
+                android:layout_height="786dp" />
+
+            <View   android:id="@+id/rectangle_39945"
+                android:background="@drawable/rectangle_39945_shape"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="433dp"
+                android:layout_height="204dp" />
+
+
+
+
+            <RelativeLayout android:id="@+id/frame_43833"
+                android:layout_marginTop="23dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+
+                <RelativeLayout android:id="@+id/frame_1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <ImageView
+                        android:id="@+id/frame_2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_width="30dp"
+                        android:layout_height="27dp"
+                        android:src="@drawable/logotrang"
+                        >
+
+
+
+
+
+
+                    </ImageView>
+
+                    <TextView android:id="@+id/sportify"
+                        android:fontFamily="Azeret Mono"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginTop="-0.29dp"
+                        android:layout_width="132.52631568909dp"
+                        android:layout_height="39.526315689087dp"
+
+                        android:text="@string/sportify_string"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView android:id="@+id/__ng_k__t_i_kho_n"
+                android:fontFamily="Poppins"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/_bg__dangky_ek2_color"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="92dp"
+                android:layout_width="288dp"
+                android:layout_height="62dp"
+                android:text="Chỉnh sửa thông tin"
+                />
+
+
+
+            <TextView android:id="@+id/khi___ng___v_i_c_c__i_u_kho_n_tr_n__b_n___ng___r_ng_th_ng_tin_c__nh_n_c_a_b_n_s_____c_thu_th_p__l_u_tr__v__x__l__t_i_sportify"
+                android:fontFamily="Manrope"
+                android:textSize="12sp"
+                android:textColor="@color/khi___ng___v_i_c_c__i_u_kho_n_tr_n__b_n___ng___r_ng_th_ng_tin_c__nh_n_c_a_b_n_s_____c_thu_th_p__l_u_tr__v__x__l__t_i_sportify_color"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="644dp"
+                android:layout_width="375dp"
+                android:layout_height="40dp"
+                android:text="@string/khi___ng___v_i_c_c__i_u_kho_n_tr_n__b_n___ng___r_ng_th_ng_tin_c__nh_n_c_a_b_n_s_____c_thu_th_p__l_u_tr__v__x__l__t_i_sportify_string"
+                />
+
+            <ImageButton
+                android:layout_width="410dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="550dp"
+                android:src="@drawable/btnden"
+                android:background="@color/white"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/saveButton"
+                />
+            <TextView
+                android:layout_width="410dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="550dp"
+                android:text="Lưu thông tin"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
+
+
+            <View   android:id="@+id/rectangle_39946"
+                android:background="@drawable/rectangle_39949_shape"
+                android:alpha="0.44999998807907"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="246dp"
+                android:layout_width="390dp"
+                android:layout_height="48dp" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:fontFamily="IBM Plex Sans"
+                android:textSize="14sp"
+                android:textColor="@color/t_n___y____color"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="261dp"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:hint="Họ và tên"
+                android:background="@null"
+                />
+
+            <View   android:id="@+id/rectangle_39947"
+                android:background="@drawable/rectangle_39949_shape"
+                android:alpha="0.44999998807907"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="324dp"
+                android:layout_width="390dp"
+                android:layout_height="48dp" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:fontFamily="IBM Plex Sans"
+                android:textSize="14sp"
+                android:textColor="@color/t_n___y____color"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="344dp"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:hint="Email"
+                android:background="@null"
+                />
+
+            <View   android:id="@+id/rectangle_39948"
+                android:background="@drawable/rectangle_39948_shape"
+                android:alpha="0.44999998807907"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="402dp"
+                android:layout_width="390dp"
+                android:layout_height="48dp" />
+
+            <EditText
+                android:id="@+id/editUsername"
+                android:fontFamily="IBM Plex Sans"
+                android:textSize="14sp"
+                android:textColor="@color/t_n___y____color"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="415dp"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:hint="Số điện thoại"
+                android:background="@null"
+                />
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:fontFamily="IBM Plex Sans"
+                android:textSize="14sp"
+                android:textColor="@color/t_n___y____color"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="493dp"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:hint="Mật khẩu"
+                android:background="@null"
+                />
+
+            <View   android:id="@+id/rectangle_39949"
+                android:background="@drawable/rectangle_39949_shape"
+                android:alpha="0.44999998807907"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="480dp"
+                android:layout_width="390dp"
+                android:layout_height="48dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
