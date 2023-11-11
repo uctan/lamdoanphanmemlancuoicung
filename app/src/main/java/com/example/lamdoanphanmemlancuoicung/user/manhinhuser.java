@@ -20,6 +20,7 @@ import com.example.lamdoanphanmemlancuoicung.admin.admindatsan.giaodienthuesan;
 import com.example.lamdoanphanmemlancuoicung.admin.adminsanpham.UploadActivity;
 import com.example.lamdoanphanmemlancuoicung.admin.adminyeuthich.favorites;
 import com.example.lamdoanphanmemlancuoicung.dangnhap;
+import com.example.lamdoanphanmemlancuoicung.hoadonbanhang.xemhoadondangkykhoahoc;
 import com.example.lamdoanphanmemlancuoicung.user.trangbanhang.trangdangky;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.appbar.MaterialToolbar;
@@ -44,7 +45,7 @@ public class manhinhuser extends AppCompatActivity {
         lichsu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(manhinhuser.this, showdanhgia.class);
+                Intent intent = new Intent(manhinhuser.this, xemhoadondangkykhoahoc.class);
                 startActivity(intent);
             }
         });
