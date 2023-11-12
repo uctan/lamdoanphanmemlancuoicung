@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="145dp"
+    android:layout_marginStart="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="12dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/edit_1" />
+
+    <TextView
+        android:id="@+id/userdatsan"
+        android:layout_width="210dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="100dp"
+        android:background="@null"
+        android:hint="Nguyễn Trần Duy Tân"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/datsanhoadon"
+        android:layout_width="210dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="100dp"
+        android:background="@null"
+        android:hint="sân"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/tiendatsan"
+        android:layout_width="210dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="100dp"
+        android:background="@null"
+        android:hint="100.000"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/ngaydatsan"
+        android:layout_width="210dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="100dp"
+        android:background="@null"
+        android:hint="00/00/0000"
+        android:layout_marginTop="110dp"
+        android:textStyle="bold"
+        />
+
+
+
+</androidx.cardview.widget.CardView>

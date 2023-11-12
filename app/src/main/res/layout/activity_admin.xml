@@ -35,14 +35,14 @@
         android:layout_marginTop="200dp"
         android:text="Quản lý sản phẩm"
         />
+
     <Button
         android:id="@+id/adqlyhoadky"
         android:layout_width="180dp"
         android:layout_height="50dp"
-        android:layout_marginTop="200dp"
-        android:text="Quản lý sản phẩm"
         android:layout_marginStart="220dp"
-        />
+        android:layout_marginTop="200dp"
+        android:text="xem lịch sử đặt sân" />
 
 </RelativeLayout>
 

@@ -9,9 +9,10 @@ import android.widget.Button;
 
 import com.example.lamdoanphanmemlancuoicung.R;
 import com.example.lamdoanphanmemlancuoicung.admin.adminsanpham.themxoasuasanpham;
+import com.example.lamdoanphanmemlancuoicung.quanlyhoadondatsan.xemlichsudatsan;
 
 public class Admin extends AppCompatActivity {
-    Button adqlysanpham;
+    Button adqlysanpham,adqlyhoadky;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,15 @@ public class Admin extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Admin.this, themxoasuasanpham.class);
+                startActivity(intent);
+            }
+        });
+
+        adqlyhoadky=findViewById(R.id.adqlyhoadky);
+        adqlyhoadky.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Admin.this, xemlichsudatsan.class);
                 startActivity(intent);
             }
         });
