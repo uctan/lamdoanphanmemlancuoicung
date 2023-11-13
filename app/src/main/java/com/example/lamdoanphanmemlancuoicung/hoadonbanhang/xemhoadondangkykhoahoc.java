@@ -2,6 +2,7 @@ package com.example.lamdoanphanmemlancuoicung.hoadonbanhang;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -14,6 +15,7 @@ import android.widget.ImageButton;
 import com.example.lamdoanphanmemlancuoicung.R;
 import com.example.lamdoanphanmemlancuoicung.admin.thongtinhoadon.hoadonclass;
 import com.example.lamdoanphanmemlancuoicung.user.manhinhuser;
+import com.example.lamdoanphanmemlancuoicung.user.trangbanhang.trangdangky;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
@@ -46,11 +48,13 @@ public class xemhoadondangkykhoahoc extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        recyclerViewhoadondangkykhoahoc.setLayoutManager(new LinearLayoutManager(this));
+
         List<hoadonclass> hoadonclassList = new ArrayList<>();
         adapter = new khoahocAdapter(this, hoadonclassList);
-        recyclerViewhoadondangkykhoahoc.setAdapter(adapter);
 
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(xemhoadondangkykhoahoc.this, 1);
+        recyclerViewhoadondangkykhoahoc.setLayoutManager(gridLayoutManager);
+        recyclerViewhoadondangkykhoahoc.setAdapter(adapter);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         CollectionReference hoadonrRef = db.collection("Hoadon");
         hoadonrRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {

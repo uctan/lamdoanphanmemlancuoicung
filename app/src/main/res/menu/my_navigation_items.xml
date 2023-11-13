@@ -11,6 +11,12 @@
         android:icon="@drawable/archive_1"
         android:title="Lịch sử đánh giá"/>
     <item
+        android:id="@+id/nav_lichsudatsan"
+        android:icon="@drawable/archive_1"
+        android:title="Lịch sử đặt sân"/>
+
+
+    <item
         android:id="@+id/nav_yt"
         android:icon="@drawable/____icon__heart__1"
         android:title="Yêu thích"/>

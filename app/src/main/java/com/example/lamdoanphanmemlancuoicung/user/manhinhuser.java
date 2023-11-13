@@ -21,6 +21,7 @@ import com.example.lamdoanphanmemlancuoicung.admin.adminsanpham.UploadActivity;
 import com.example.lamdoanphanmemlancuoicung.admin.adminyeuthich.favorites;
 import com.example.lamdoanphanmemlancuoicung.dangnhap;
 import com.example.lamdoanphanmemlancuoicung.hoadonbanhang.xemhoadondangkykhoahoc;
+import com.example.lamdoanphanmemlancuoicung.quanlyhoadondatsan.trangxemdatsannguoidung;
 import com.example.lamdoanphanmemlancuoicung.user.trangbanhang.trangdangky;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.appbar.MaterialToolbar;
@@ -112,7 +113,13 @@ public class manhinhuser extends AppCompatActivity {
                     Toast.makeText(manhinhuser.this, "Bạn đã vào trang cá nhân", Toast.LENGTH_SHORT).show();
                     // Không nên chuyển hướng đến trang chủ của chính activity trangchu nếu đã ở đó rồi
                     // Để lại màn hình hiện tại không thay đổi
-                }else if (id == R.id.nav_cn) {
+                } else if (id == R.id.nav_lichsudatsan) {
+                    Toast.makeText(manhinhuser.this, "Bạn đã vào trang xem đặt sân", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(manhinhuser.this, trangxemdatsannguoidung.class);
+                    startActivity(intent);
+
+                }
+                else if (id == R.id.nav_cn) {
                     Toast.makeText(manhinhuser.this, "Bạn đã vào trang cá nhân", Toast.LENGTH_SHORT).show();
 
                 }else if (id == R.id.nav_yt) {
