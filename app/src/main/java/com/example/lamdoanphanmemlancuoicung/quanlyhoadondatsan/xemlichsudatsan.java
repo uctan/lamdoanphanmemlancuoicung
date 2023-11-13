@@ -77,9 +77,9 @@ public class xemlichsudatsan extends AppCompatActivity {
                         String fieldName = document.getString("fieldName");
                         int price = document.getLong("price").intValue();
                         String ngaythuesan = document.getString("date");
+                        String tensanthue = document.getString("tensanthue");
 
-                        Booking booking = new Booking(fieldName, ngaythuesan, null, null, price, null, tennguoithue);
-
+                        Booking booking = new Booking(fieldName, ngaythuesan, null, null, price, tensanthue, tennguoithue);
                         BookingList.add(booking);
                     }
                     adapter.notifyDataSetChanged();

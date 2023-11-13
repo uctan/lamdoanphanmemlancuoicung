@@ -46,6 +46,7 @@ public class lichsuAdapter  extends RecyclerView.Adapter<lichsuAdapter.ViewHolde
         holder.datsanhoadon.setText(Booking.getFieldName());
         holder.tiendatsan.setText(String.valueOf(Booking.getPrice()));
         holder.ngaydatsan.setText(Booking.getDate());
+        holder.tensanhoadon.setText(Booking.getTensanthue());
     }
 
     @Override
@@ -53,13 +54,14 @@ public class lichsuAdapter  extends RecyclerView.Adapter<lichsuAdapter.ViewHolde
         return bookingg.size();
     }
     class ViewHolder extends RecyclerView.ViewHolder{
-        TextView userdatsan,datsanhoadon, tiendatsan,ngaydatsan;
+        TextView userdatsan,datsanhoadon, tiendatsan,ngaydatsan,tensanhoadon;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             userdatsan = itemView.findViewById(R.id.userdatsan);
             datsanhoadon = itemView.findViewById(R.id.datsanhoadon);
             tiendatsan = itemView.findViewById(R.id.tiendatsan);
             ngaydatsan=itemView.findViewById(R.id.ngaydatsan);
+            tensanhoadon = itemView.findViewById(R.id.tensanhoadon);
 
         }
     }
