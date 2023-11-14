@@ -106,7 +106,7 @@ public class manhinhuser extends AppCompatActivity {
 
                 if (id == R.id.nav_cn) {
                     Toast.makeText(manhinhuser.this, "Bạn đã vào trang cá nhân", Toast.LENGTH_SHORT).show();
-                    // Chuyển hướng tới trang cá nhân ở đây nếu cần thiết
+
 
 
                 } else if (id == R.id.nav_home) {
@@ -119,15 +119,14 @@ public class manhinhuser extends AppCompatActivity {
                     startActivity(intent);
 
                 }
-                else if (id == R.id.nav_cn) {
-                    Toast.makeText(manhinhuser.this, "Bạn đã vào trang cá nhân", Toast.LENGTH_SHORT).show();
-
-                }else if (id == R.id.nav_yt) {
+               else if (id == R.id.nav_yt) {
                     Toast.makeText(manhinhuser.this, "Bạn đã vào trang cá nhân", Toast.LENGTH_SHORT).show();
 
                 }
                 else  if (id == R.id.nav_lichsu){
                     Toast.makeText(manhinhuser.this, "Bạn đã vào trang cá nhân", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(manhinhuser.this, showdanhgia.class);
+                    startActivity(intent);
 
                 } else if (id == R.id.nav_dangxuat) {
                     FirebaseAuth.getInstance().signOut();

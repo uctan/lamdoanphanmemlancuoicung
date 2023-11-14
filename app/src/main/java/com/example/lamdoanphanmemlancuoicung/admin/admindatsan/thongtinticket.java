@@ -14,6 +14,9 @@ import android.widget.Toast;
 
 import com.example.lamdoanphanmemlancuoicung.R;
 import com.example.lamdoanphanmemlancuoicung.admin.admindanhgiasanpham.vietcomment;
+import com.example.lamdoanphanmemlancuoicung.user.trangbanhang.DetailActivity;
+import com.example.lamdoanphanmemlancuoicung.user.trangbanhang.thongtindangky;
+import com.example.lamdoanphanmemlancuoicung.user.trangbanhang.trangdangky;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -30,7 +33,7 @@ import java.util.Map;
 public class thongtinticket extends AppCompatActivity {
     TextView tensanthuene, ngaythuesanne, tennguoithuene, idtensanbongthue, giothuesan, gioketthucthuesan, idthanhtoansan;
 
-    ImageButton saveticket;
+    ImageButton saveticket,vectorttquaylaiticket;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -45,6 +48,14 @@ public class thongtinticket extends AppCompatActivity {
         gioketthucthuesan = findViewById(R.id.gioketthucthuesan);
         idthanhtoansan = findViewById(R.id.idthanhtoansan);
         saveticket = findViewById(R.id.savetickett);
+        vectorttquaylaiticket = findViewById(R.id.vectorttquaylaiticket);
+        vectorttquaylaiticket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(thongtinticket.this, giaodienthuesan.class);
+                startActivity(intent);
+            }
+        });
 
         Intent intent = getIntent();
 
@@ -101,7 +112,7 @@ public class thongtinticket extends AppCompatActivity {
                 }
 
                 // Tạo một đối tượng Booking từ dữ liệu nhập
-                Booking booking = new Booking(idTenSanBongThue, ngayThueSanNe, gioBatDau, gioKetThuc, idThanhToanSan, tenSan, tenNguoiThueNe);
+                Booking booking = new Booking(idTenSanBongThue, ngayThueSanNe, gioBatDau, gioKetThuc, idThanhToanSan, tenSanThuene, tenNguoiThueNe);
 
                 // Lưu đối tượng Booking vào Firestore
                 FirebaseFirestore fStore = FirebaseFirestore.getInstance();
@@ -112,6 +123,8 @@ public class thongtinticket extends AppCompatActivity {
                             public void onSuccess(DocumentReference documentReference) {
                                 // Xử lý khi lưu vào Firestore thành công
                                 Toast.makeText(thongtinticket.this, "Lưu thông tin đặt sân thành công", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(thongtinticket.this, vietcomment.class);
+                                startActivity(intent);
                             }
                         })
                         .addOnFailureListener(new OnFailureListener() {

@@ -65,13 +65,20 @@ public class thongtindangky extends AppCompatActivity {
 
         idkhoahoc = findViewById(R.id.idkhoahoc);
         idkhoahoc.setText(getIntent().getStringExtra("Title"));
-
+        vectorttshow = findViewById(R.id.vectorttshow);
+        vectorttshow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(thongtindangky.this, trangdangky.class);
+                startActivity(intent);
+            }
+        });
         idthanhtoan = findViewById(R.id.idthanhtoan);
         idthanhtoan.setText(getIntent().getStringExtra("Giaca"));
         savett = findViewById(R.id.savett);
         //momo
         AppMoMoLib.getInstance().setEnvironment(AppMoMoLib.ENVIRONMENT.DEVELOPMENT);
-        thanhtoanmomo = findViewById(R.id.thanhtoanmomo);
+
 
 
 
@@ -125,52 +132,10 @@ public class thongtindangky extends AppCompatActivity {
                                 fStore.collection("Hoadon")
                                         .add(hoadon)
                                         .addOnSuccessListener(documentReference -> {
-                                            Toast.makeText(thongtindangky.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
 
-                                            finish();
-                                        })
-                                        .addOnFailureListener(e -> {
-                                            // Xử lý khi gặp lỗi nếu cần
-                                        });
-                            }
-                        });
-            }
-        });
-        thanhtoanmomo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                fStore.collection("HoaDon")
-                        .orderBy("idDonHang", Query.Direction.DESCENDING)
-                        .limit(1)
-                        .get()
-                        .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
-                            @Override
-                            public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
-                                int newIdDonHang = 1;
-                                if (!queryDocumentSnapshots.isEmpty()) {
-                                    for (QueryDocumentSnapshot document : queryDocumentSnapshots) {
-                                        int highestidDonHang = document.getLong("idDonHang").intValue();
-                                        newIdDonHang = highestidDonHang + 1;
-                                    }
-                                }
-
-                                String ten = idten.getText().toString();
-                                String sdt = idtsdt.getText().toString();
-                                String khoahoc = idkhoahoc.getText().toString();
-                                String thanhtoanStr = idthanhtoan.getText().toString();
-                                int thanhtoan = Integer.parseInt(thanhtoanStr);
-
-                                // Tạo một đối tượng hoadonclass với thông tin đã nhập
-                                hoadonclass hoadon = new hoadonclass(newIdDonHang, ten, sdt, khoahoc, thanhtoan);
-
-                                fStore.collection("Hoadon")
-                                        .add(hoadon)
-                                        .addOnSuccessListener(documentReference -> {
-                                            Toast.makeText(thongtindangky.this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
-
-                                            requestPayment(merchantName);
                                             amount = String.valueOf(thanhtoan);
-                                            finish();
+                                            requestPayment(merchantName);
+
                                         })
                                         .addOnFailureListener(e -> {
                                             // Xử lý khi gặp lỗi nếu cần
@@ -179,6 +144,7 @@ public class thongtindangky extends AppCompatActivity {
                         });
             }
         });
+
     }
 
     //momo
@@ -227,6 +193,8 @@ public class thongtindangky extends AppCompatActivity {
             if(data != null) {
                 if(data.getIntExtra("status", -1) == 0) {
                     Log.d("Thanhcong", data.getStringExtra("message"));
+                    Intent intent = new Intent(thongtindangky.this, vietcomment.class);
+                    startActivity(intent);
 
                     if(data.getStringExtra("data") != null && !data.getStringExtra("data").equals("")) {
                         // TODO:

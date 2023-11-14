@@ -32,13 +32,14 @@ public class adminthuesan extends AppCompatActivity {
 
     TextView sanbongda, giatienthuesan, ngay, datdau, ketthuc;
     ImageView sanA, sanD, sanB, sanC;
-    ImageButton savethuesan;
+    View savethuesan;
     ImageView giobatdau, gioketthuc;
 
     ImageView selectedSan = null;
     FirebaseFirestore db;
     TextView tenSanTextView;
     HashMap<String, Integer> giaSan = new HashMap<>();
+    View quaylaitrangchonsan;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -66,6 +67,15 @@ public class adminthuesan extends AppCompatActivity {
         giaSan.put("Sân B", 150000);
         giaSan.put("Sân C", 120000);
         giaSan.put("Sân D", 130000);
+
+        quaylaitrangchonsan = findViewById(R.id.quaylaitrangchonsan);
+        quaylaitrangchonsan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(adminthuesan.this, giaodienthuesan.class);
+                startActivity(intent);
+            }
+        });
 
         sanA.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -37,6 +37,14 @@ public class profileuser extends AppCompatActivity {
         editButton = findViewById(R.id.editButton);
 
         editButton = findViewById(R.id.editButton);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(profileuser.this, manhinhuser.class);
+                startActivity(intent);
+            }
+        });
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

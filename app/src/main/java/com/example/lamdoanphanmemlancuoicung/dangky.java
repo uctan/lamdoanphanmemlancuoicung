@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lamdoanphanmemlancuoicung.admin.Admin;
@@ -42,42 +44,58 @@ public class dangky extends AppCompatActivity {
     //congtien
 
     EditText fullName,email,password,phone;
-    Button registerBtn,goToLogin;
-    boolean valid = true;
-    private GoogleSignInClient mGoogleSignInClient;
-    private  static final int RC_SIGN_IN = 1;
-    private static final String TAG = "MyActivity";
+    TextView registerBtn,gotoLogin;
 
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
 
+    boolean valid = true;
+    private GoogleSignInClient mGoogleSignInClient;
+    private  static final int RC_SIGN_IN = 1;
+    private static final String TAG = "MyActivity";
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dangky);
-
-        fAuth = FirebaseAuth.getInstance();
-        fStore = FirebaseFirestore.getInstance();
-        CheckBox isTecherBox,isStudentBox;
-
-
+        CheckBox isAdminBox,isUserBox;
         fullName = findViewById(R.id.registerName);
         email = findViewById(R.id.registerEmail);
         password = findViewById(R.id.registerPassword);
         phone = findViewById(R.id.registerPhone);
-        registerBtn = findViewById(R.id.registerBtn);
-        goToLogin = findViewById(R.id.gotoLogin);
 
-        isTecherBox = findViewById(R.id.isTeacher);
-        isStudentBox = findViewById(R.id.isStudent);
+        registerBtn = findViewById(R.id.registerBtn);
+        gotoLogin = findViewById(R.id.gotoLogin);
+
+        ImageButton registerWithGmailBtn = findViewById(R.id.dangkygmail);
+
+        isUserBox = findViewById(R.id.isStudent);
+        isAdminBox = findViewById(R.id.isTeacher);
+
+        fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
+
+        isUserBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (compoundButton.isChecked()){
+                    isAdminBox.setChecked(false);
+                }
+            }
+        });
+        isAdminBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (compoundButton.isChecked()){
+                    isUserBox.setChecked(false);
+                }
+            }
+        });
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
-        Button registerWithGmailBtn = findViewById(R.id.dangkygmail);
         registerWithGmailBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -85,26 +103,6 @@ public class dangky extends AppCompatActivity {
                 registerWithGmail();
             }
         });
-
-
-
-        isStudentBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (compoundButton.isChecked()){
-                    isTecherBox.setChecked(false);
-                }
-            }
-        });
-        isTecherBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if (compoundButton.isChecked()){
-                    isStudentBox.setChecked(false);
-                }
-            }
-        });
-
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,7 +111,7 @@ public class dangky extends AppCompatActivity {
                 checkField(password);
                 checkField(phone);
 
-                if (!(isTecherBox.isChecked() || isStudentBox.isChecked())){
+                if (!( isUserBox.isChecked() || isAdminBox.isChecked())){
                     Toast.makeText(dangky.this,"Lựa chọn hình thức",Toast.LENGTH_SHORT).show();
                     return;
 
@@ -133,22 +131,19 @@ public class dangky extends AppCompatActivity {
                             userInfo.put("PhoneNumber", phone.getText().toString());
                             userInfo.put("MatKhau", password.getText().toString());
                             // nguoi dung admin
-                            if(isTecherBox.isChecked()){
-                                userInfo.put("isTeacher","1");
+                            if(isAdminBox.isChecked()){
+                                userInfo.put("isAdminr","1");
                             }
-                            if(isStudentBox.isChecked()){
-                                userInfo.put("isStudent","1");
+                            if( isUserBox.isChecked()){
+                                userInfo.put("isUser","1");
                             }
                             df.set(userInfo);
-                            Intent intent = new Intent(dangky.this, thongtindangky.class);
-                            intent.putExtra("UserEmail", email.getText().toString());
-                            intent.putExtra("PhoneNumber", phone.getText().toString());
-                            startActivity(intent);
-                            if (isTecherBox.isChecked()){
+
+                            if (isAdminBox.isChecked()){
                                 startActivity(new Intent(getApplicationContext(), Admin.class));
                                 finish();
                             }
-                            if (isStudentBox.isChecked()){
+                            if (isUserBox.isChecked()){
                                 startActivity(new Intent(getApplicationContext(), manhinhuser.class));
                                 finish();
                             }
@@ -163,7 +158,7 @@ public class dangky extends AppCompatActivity {
             }
         });
 
-        goToLogin.setOnClickListener(new View.OnClickListener() {
+        gotoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getApplicationContext(), dangnhap.class));
@@ -171,7 +166,6 @@ public class dangky extends AppCompatActivity {
         });
 
     }
-
     public boolean checkField(EditText textField){
         if(textField.getText().toString().isEmpty()){
             textField.setError("Error");

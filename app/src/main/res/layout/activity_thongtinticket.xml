@@ -35,7 +35,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp" />
 
-            <ImageButton android:id="@+id/vectorttshow"
+            <ImageButton android:id="@+id/vectorttquaylaiticket"
                 android:src="@drawable/vectorthanhtoan"
                 android:contentDescription="vector"
                 android:layout_marginStart="31dp"

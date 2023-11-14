@@ -5,11 +5,15 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 
 import com.example.lamdoanphanmemlancuoicung.R;
+import com.example.lamdoanphanmemlancuoicung.user.manhinhuser;
 import com.example.lamdoanphanmemlancuoicung.user.trangbanhang.trangdangky;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
@@ -26,7 +30,9 @@ public class giaodienthuesan extends AppCompatActivity {
 
     private List<FootballField> footballFields;
     CollectionReference footballCollection;
+    ImageButton vectortrangthuesan;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +44,16 @@ public class giaodienthuesan extends AppCompatActivity {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(giaodienthuesan.this, 1);
         recyclerView.setLayoutManager(gridLayoutManager);
         footballCollection = FirebaseFirestore.getInstance().collection("football_fields");
+
+        vectortrangthuesan = findViewById(R.id.vectortrangthuesan);
+        vectortrangthuesan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(giaodienthuesan.this, manhinhuser.class);
+                startActivity(intent);
+            }
+        });
+
 
         AlertDialog.Builder builder = new AlertDialog.Builder(giaodienthuesan.this);
         builder.setCancelable(false);

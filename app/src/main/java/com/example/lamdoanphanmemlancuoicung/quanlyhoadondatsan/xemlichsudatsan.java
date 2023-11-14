@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ import android.widget.TextView;
 import com.example.lamdoanphanmemlancuoicung.R;
 import com.example.lamdoanphanmemlancuoicung.admin.Admin;
 import com.example.lamdoanphanmemlancuoicung.admin.admindatsan.Booking;
+import com.example.lamdoanphanmemlancuoicung.admin.adminsanpham.ItemSpacingDecoration;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.CollectionReference;
@@ -31,21 +33,24 @@ import java.util.List;
 public class xemlichsudatsan extends AppCompatActivity {
 
     ImageButton closelichsudatsan;
-    RecyclerView recyclerViewlíchudatsan;
+    RecyclerView recyclerViewlistchudatsan;
     lichsuAdapter adapter;
 
     ImageView chongayxem;
 
     private String selectedDate;
+    TextView xemngay;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_xemlichsudatsan);
         closelichsudatsan = findViewById(R.id.closelichsudatsan);
-        recyclerViewlíchudatsan = findViewById(R.id.recyclerViewlíchudatsan);
+        recyclerViewlistchudatsan = findViewById(R.id.recyclerViewlíchudatsan);
         chongayxem = findViewById(R.id.chongayxem);
+        xemngay = findViewById(R.id.xemngay);
 
         chongayxem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,10 +66,11 @@ public class xemlichsudatsan extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        recyclerViewlíchudatsan.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewlistchudatsan.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewlistchudatsan.addItemDecoration(new ItemSpacingDecoration(16));
         List<Booking> BookingList = new ArrayList<>();
         adapter = new lichsuAdapter(this, BookingList);
-        recyclerViewlíchudatsan.setAdapter(adapter);
+        recyclerViewlistchudatsan.setAdapter(adapter);
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         CollectionReference bookinggRef = db.collection("bookings");
@@ -120,6 +126,7 @@ public class xemlichsudatsan extends AppCompatActivity {
                 selectedDate = String.format("%02d/%02d/%04d", dayOfMonth, month + 1, year);
 
                 // Sau khi người dùng chọn ngày, hãy lọc danh sách và hiển thị
+                xemngay.setText(selectedDate);
                 filterBookingsByDate(selectedDate);
             }
         }, year, month, dayOfMonth);

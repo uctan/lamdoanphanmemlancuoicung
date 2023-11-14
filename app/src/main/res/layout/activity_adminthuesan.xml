@@ -23,13 +23,13 @@
                     android:background="@drawable/_bg__datsan_ek2_shape"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
-                    android:layout_width="393dp"
-                    android:layout_height="786dp" />
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
                 <ImageView android:id="@+id/svd_1"
                     android:src="@drawable/svd_1"
                     android:contentDescription="svd_1"
-                    android:layout_marginStart="167dp"
+                    android:layout_marginStart="175dp"
                     android:layout_marginTop="160dp"
                     android:layout_width="223dp"
                     android:layout_height="420.93dp" />
@@ -37,14 +37,14 @@
                 <ImageView android:id="@+id/sanA"
                     android:background="@drawable/rectangle_39933_shape"
                     android:contentDescription="vector_262"
-                    android:layout_marginStart="220dp"
+                    android:layout_marginStart="230dp"
                     android:layout_marginTop="240dp"
                     android:layout_width="110dp"
                     android:layout_height="50dp" />
 
                 <ImageView   android:id="@+id/sanB"
                     android:background="@drawable/rectangle_39933_shape"
-                    android:layout_marginStart="209dp"
+                    android:layout_marginStart="220dp"
                     android:layout_marginTop="309dp"
                     android:layout_width="56dp"
                     android:layout_height="152dp" />
@@ -54,13 +54,13 @@
                     android:background="@drawable/rectangle_39933_shape"
                     android:layout_width="56dp"
                     android:layout_height="152dp"
-                    android:layout_marginStart="277dp"
+                    android:layout_marginStart="297dp"
                     android:layout_marginTop="308dp" />
 
                 <ImageView android:id="@+id/sanD"
                     android:background="@drawable/rectangle_39933_shape"
                     android:contentDescription="vector_263"
-                    android:layout_marginStart="220dp"
+                    android:layout_marginStart="235dp"
                     android:layout_marginTop="470dp"
                     android:layout_width="110dp"
                     android:layout_height="40dp" />
@@ -73,15 +73,9 @@
                     android:layout_height="wrap_content"
                     >
 
-                    <View   android:id="@+id/_bg__group_1667_ek1"
-                        android:background="@drawable/_bg__group_1667_ek1_shape"
-                        android:layout_marginStart="-286dp"
-                        android:layout_marginTop="-635dp"
-                        android:layout_width="20dp"
-                        android:layout_height="20dp" />
 
-                    <View   android:id="@+id/ellipse_27"
-                        android:background="@drawable/ellipse_27_shape"
+                    <View
+                        android:background="@drawable/hetsan"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
                         android:layout_width="20dp"
@@ -92,52 +86,59 @@
 
 
 
-                <TextView android:id="@+id/_____t"
+                <TextView
                     android:textStyle="bold"
                     android:textSize="14sp"
                     android:textColor="@color/_bg__group_1667_ek1_color"
                     android:layout_marginLeft="315dp"
-                    android:layout_marginTop="636dp"
+                    android:layout_marginTop="633dp"
                     android:layout_width="55.4dp"
                     android:layout_height="21.4dp"
-                    android:text="@string/_____t_string"
+                    android:text="Đã đặt"
                     />
 
-                <TextView android:id="@+id/c_n_s_n"
+                <TextView
                     android:textStyle="bold"
                     android:textSize="14sp"
                     android:textColor="@color/_bg__group_1667_ek1_color"
                     android:layout_marginLeft="202dp"
-                    android:layout_marginTop="635dp"
+                    android:layout_marginTop="634dp"
                     android:layout_width="85.4dp"
                     android:layout_height="21.4dp"
-                    android:text="@string/c_n_s_n_string"
+                    android:text="Còn sân"
+                    />
+                <View
+                    android:background="@drawable/consan"
+                    android:layout_marginStart="170dp"
+                    android:layout_marginTop="634dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginStart="-10dp"
+                    android:background="@drawable/bgdatsan"
                     />
 
-
-
-
-                <RelativeLayout android:id="@+id/arrow_right"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginStart="14dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    >
-
-
-
-                </RelativeLayout>
-
-
+                <View
+                    android:id="@+id/quaylaitrangchonsan"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/quaylainha"
+                    />
 
                 <TextView android:id="@+id/sanbongda"
                     android:textStyle="bold"
                     android:layout_gravity="center_horizontal|center"
                     android:gravity="center"
                     android:textSize="28sp"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="110dp"
-                    android:layout_marginTop="46dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="40dp"
                     android:layout_width="196dp"
                     android:layout_height="48.8dp"
                     android:text="Sân 5 người"
@@ -160,16 +161,16 @@
                     android:text="@string/_8_45_pm_string"
                     />
 
-                <TextView android:id="@+id/ch_n_gi_"
+                <TextView
                     android:textStyle="bold"
                     android:layout_gravity="center_horizontal|center"
                     android:gravity="center"
                     android:textSize="11sp"
                     android:textColor="@color/_bg__group_1667_ek1_color"
                     android:layout_marginLeft="50dp"
-                    android:layout_marginTop="350dp"
+                    android:layout_marginTop="355dp"
                     android:layout_width="100dp"
-                    android:layout_height="40dp"
+                    android:layout_height="20dp"
                     android:text="Chọn giờ bắt đầu"
                     />
                 <TextView android:id="@+id/giohet"
@@ -268,73 +269,30 @@
                     android:text="ngày"
                     />
 
+                <View
+                    android:layout_width="330dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="680dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/button"
+                    android:id="@+id/savethuesan"
+                    />
 
-
-
-
-
-
-
-
-
-                    <RelativeLayout android:id="@+id/group_696"
-                        android:layout_marginTop="7dp"
-                        android:layout_marginStart="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        >
-
-                        <View   android:id="@+id/_bg__group_696_ek1"
-                            android:background="@drawable/_bg__group_696_ek1_shape"
-                            android:layout_marginStart="-40dp"
-                            android:layout_marginTop="-446dp"
-                            android:layout_width="13.3dp"
-                            android:layout_height="18dp" />
-
-
-                        <RelativeLayout android:id="@+id/group_609"
-                            android:layout_marginTop="0dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            >
-
-                            <View   android:id="@+id/_bg__group_609_ek1"
-                                android:background="@drawable/_bg__group_609_ek1_shape"
-                                android:layout_marginStart="-40dp"
-                                android:layout_marginTop="-446dp"
-                                android:layout_width="13.3dp"
-                                android:layout_height="18dp" />
-
-
-
-                        </RelativeLayout>
-
-                    </RelativeLayout>
-
+                <TextView
+                    android:layout_width="330dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="680dp"
+                    android:layout_marginStart="50dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:text="Đăng ký"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    />
                 </RelativeLayout>
 
-                <TextView android:id="@+id/__ng_k_"
-                    android:textStyle="bold"
-                    android:layout_gravity="center_horizontal|center"
-                    android:gravity="center"
-                    android:textSize="24sp"
-                    android:textColor="@color/_bg__datsan_ek2_color"
-                    android:layout_marginLeft="114dp"
-                    android:layout_marginTop="713dp"
-                    android:layout_width="171.4dp"
-                    android:layout_height="38.4dp"
-                    android:text="@string/__ng_k__string"
-                    />
-            <ImageButton
-                android:layout_width="370dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="670dp"
-                android:layout_marginStart="30dp"
-                android:src="@drawable/button"
-                android:background="@color/white"
-                android:id="@+id/savethuesan"
-                />
+
+
 
             </RelativeLayout>
 

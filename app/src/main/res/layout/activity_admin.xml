@@ -1,60 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".admin.Admin">
+    >
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:ignore="MissingConstraints">
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/edit_1"
-        />
-    <TextView
-        android:id="@+id/adminten"
-        android:layout_width="300dp"
-        android:layout_height="80dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="10dp"
-        android:hint="Nguyễn Trần Duy Tân"
-        android:gravity="center_vertical"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        />
-    <Button
-        android:id="@+id/adqlysanpham"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="200dp"
-        android:text="Quản lý sản phẩm"
-        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/adqlyhoadky"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="200dp"
-        android:text="xem lịch sử đặt sân" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+
+                >
+                <TextView
+                    android:layout_width="230dp"
+                    android:layout_height="60dp"
+                    android:gravity="left|center"
+                    android:text="Quản lý cửa hàng"
+                    android:textStyle="bold"
+                    android:layout_marginStart="30dp"
+                    android:textSize="22sp"
+                    />
 
 
-    <Button
-        android:id="@+id/adqlykhoahoc"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="300dp"
-        android:text="xem lịch sử mua khóa học">
+            </RelativeLayout>
 
-    </Button>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="90dp"
+                >
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_1"
+                    android:layout_marginStart="20dp"
+                    />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:text="ADMIN"
+                    android:textSize="17sp"
+                    android:layout_marginStart="90dp"
+                    />
+                <TextView
+                    android:id="@+id/tencuahangshop"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="60dp"
+                    android:textStyle="bold"
+                    android:text="Quản lý cửa hàng"
+                    android:textSize="17sp"
+                    android:layout_marginStart="90dp"
+                    />
 
-</RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:layout_marginTop="220dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:text="Quản lý tài khoản cửa hàng"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#484F88"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <View
+                            android:id="@+id/adqlysanpham"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/profile"/>
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/anhdemo"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="20dp"
+                            />
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="60dp"
+                            android:gravity="left|center"
+                            android:text="Quản lý khóa hoc"
+                            />
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/backprofile"
+                            android:layout_marginStart="400dp"
+                            android:layout_marginTop="15dp"
+                            android:foregroundGravity="right|center"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <View
+                            android:id="@+id/adqlykhoahoc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/profile"/>
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/donhang"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="20dp"
+                            />
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="60dp"
+                            android:gravity="left|center"
+                            android:text="Quản lý hóa đơn"
+                            />
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/backprofile"
+                            android:layout_marginStart="400dp"
+                            android:layout_marginTop="15dp"
+                            android:foregroundGravity="right|center"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:id="@+id/adquanlysan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/profile" />
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/traibanh"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="20dp"
+                            />
+                        <TextView
+
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="60dp"
+                            android:gravity="left|center"
+                            android:text="Quản lý sân"
+                            />
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/backprofile"
+                            android:layout_marginStart="400dp"
+                            android:layout_marginTop="15dp"
+                            android:foregroundGravity="right|center"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <View
+                            android:id="@+id/adqlyhoadky"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/profile"
+                            android:clickable="true"/>
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/traibanh"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginStart="20dp"
+                            />
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="60dp"
+                            android:gravity="left|center"
+                            android:text="Quản lý hóa đơn thuê sân"
+                            />
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/backprofile"
+                            android:layout_marginStart="400dp"
+                            android:layout_marginTop="15dp"
+                            android:foregroundGravity="right|center"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/dangxuatnguoiban"
+                android:layout_width="343dp"
+                android:layout_height="60dp"
+                android:background="@drawable/dangxuatadmin"
+                android:layout_marginTop="530dp"
+                android:layout_marginStart="50dp"
+                />
+        </RelativeLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

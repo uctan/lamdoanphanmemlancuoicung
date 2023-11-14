@@ -26,6 +26,7 @@ import java.util.Map;
 public class showdanhgia extends AppCompatActivity {
     RecyclerView recyclerView;
     AdapterReviews adapter;
+    ImageButton closecmt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,15 @@ public class showdanhgia extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new AdapterReviews(new ArrayList<>(), FirebaseFirestore.getInstance()); // Khởi tạo adapter
         recyclerView.setAdapter(adapter);
+
+        closecmt = findViewById(R.id.closecmt);
+        closecmt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(showdanhgia.this, manhinhuser.class);
+                startActivity(intent);
+            }
+        });
 
         FirebaseFirestore.getInstance().collection("Reviews")
                 .get()

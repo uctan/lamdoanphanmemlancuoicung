@@ -7,6 +7,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +26,7 @@ public class themxoasuadetail extends AppCompatActivity {
     TextView detailDescthem, detailTitlethem, detailLangthem;
     ImageView detailImagethem;
     FloatingActionButton deleteButton,editButton;
+    ImageButton closeadminquanly;
     String key = "";
     String imageUrl = "";
     @SuppressLint("MissingInflatedId")
@@ -33,6 +35,8 @@ public class themxoasuadetail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_themxoasuadetail);
         detailImagethem = findViewById(R.id.detailImagethem);
+        closeadminquanly = findViewById(R.id.closeadminquanly);
+
         detailDescthem = findViewById(R.id.detailDescthem);
         detailTitlethem = findViewById(R.id.detailTitlethem);
         detailLangthem = findViewById(R.id.detailLangthem);
@@ -47,6 +51,13 @@ public class themxoasuadetail extends AppCompatActivity {
             imageUrl = bundle.getString("Image");
             Glide.with(this).load(bundle.getString("Image")).into(detailImagethem);
         }
+        closeadminquanly.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(themxoasuadetail.this, themxoasuasanpham.class);
+                startActivity(intent);
+            }
+        });
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.example.lamdoanphanmemlancuoicung.R;
+import com.example.lamdoanphanmemlancuoicung.admin.adminsanpham.ItemSpacingDecoration;
 import com.example.lamdoanphanmemlancuoicung.admin.thongtinhoadon.hoadonclass;
 import com.example.lamdoanphanmemlancuoicung.user.manhinhuser;
 import com.example.lamdoanphanmemlancuoicung.user.trangbanhang.trangdangky;
@@ -54,6 +55,7 @@ public class xemhoadondangkykhoahoc extends AppCompatActivity {
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(xemhoadondangkykhoahoc.this, 1);
         recyclerViewhoadondangkykhoahoc.setLayoutManager(gridLayoutManager);
+        recyclerViewhoadondangkykhoahoc.addItemDecoration(new ItemSpacingDecoration(16));
         recyclerViewhoadondangkykhoahoc.setAdapter(adapter);
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         CollectionReference hoadonrRef = db.collection("Hoadon");

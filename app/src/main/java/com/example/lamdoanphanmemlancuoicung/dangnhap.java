@@ -3,6 +3,7 @@ package com.example.lamdoanphanmemlancuoicung;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,6 +12,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.lamdoanphanmemlancuoicung.admin.Admin;
@@ -38,7 +41,8 @@ import java.util.Objects;
 public class dangnhap extends AppCompatActivity {
 
     EditText email,password;
-    Button loginBtn,gotoRegister,google_signIn;
+    TextView gotoRegister;
+    ImageButton google_signIn,loginBtn;
     boolean valid = true;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -49,11 +53,12 @@ public class dangnhap extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     Dialog dialog;
-
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dangnhap);
+
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -62,6 +67,8 @@ public class dangnhap extends AppCompatActivity {
         password = findViewById(R.id.loginPassword);
         loginBtn = findViewById(R.id.loginBtn);
         gotoRegister = findViewById(R.id.gotoRegister);
+
+        google_signIn = findViewById(R.id.google_signIn);
         mAuth = FirebaseAuth.getInstance();
         //dangnhap bang google
         mAuth = FirebaseAuth.getInstance();
@@ -70,8 +77,8 @@ public class dangnhap extends AppCompatActivity {
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this,gso);
-        Button signInbtn = findViewById(R.id.google_signIn);
-        signInbtn.setOnClickListener(new View.OnClickListener() {
+
+        google_signIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 signIn();
@@ -117,8 +124,6 @@ public class dangnhap extends AppCompatActivity {
         });
 
     }
-    //dang nhap bangg gmail
-
     private void signIn() {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
@@ -179,11 +184,11 @@ public class dangnhap extends AppCompatActivity {
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 Log.d("TAG","onSuccess:" + documentSnapshot.getData());
 
-                if (documentSnapshot.getString("isTeacher") != null){
+                if (documentSnapshot.getString("isAdminr") != null){
                     startActivity(new Intent(getApplicationContext(), Admin.class));
                     finish();
                 }
-                if (documentSnapshot.getString("isStudent") != null){
+                if (documentSnapshot.getString("isUser") != null){
                     startActivity(new Intent(getApplicationContext(), manhinhuser.class));
                     finish();
                 }
@@ -232,5 +237,4 @@ public class dangnhap extends AppCompatActivity {
 
 
     }
-
 }

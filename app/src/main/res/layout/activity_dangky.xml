@@ -1,143 +1,310 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView android:id="@+id/dangky"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    tools:context=".dangky">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".dangky"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        app:cardCornerRadius="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        <RelativeLayout android:id="@+id/page_dangky_ek1"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            >
 
-            <EditText
-                android:id="@+id/registerName"
-                android:layout_width="0dp"
+
+
+            <View   android:id="@+id/rectangle_39945"
+                android:background="@drawable/rectangle_39945_shape"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_width="433dp"
+                android:layout_height="204dp" />
+
+            <TextView android:id="@+id/join"
+                android:fontFamily="Bebas Neue"
+                android:textStyle="bold"
+                android:alpha="0.1"
+                android:textSize="108sp"
+                android:textColor="@color/_bg__dangky_ek2_color"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="62dp"
+                android:layout_width="296dp"
+                android:layout_height="218dp"
+                android:text="@string/join_string"
+                />
+
+
+            <RelativeLayout android:id="@+id/frame_43833"
+                android:layout_marginTop="23dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:ems="10"
-                android:hint="Full Name"
-                android:inputType="textPersonName"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                >
 
-            <EditText
-                android:id="@+id/registerEmail"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:ems="10"
-                android:hint="Email Address"
-                android:inputType="textEmailAddress"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerName" />
 
-            <EditText
-                android:id="@+id/registerPassword"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:ems="10"
-                android:hint="Password"
-                android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
+                <RelativeLayout android:id="@+id/frame_1"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
 
-            <EditText
-                android:id="@+id/registerPhone"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:ems="10"
-                android:hint="Phone Number"
-                android:inputType="phone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
+                    <ImageView
+                        android:id="@+id/frame_2"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_width="30dp"
+                        android:layout_height="27dp"
+                        android:src="@drawable/logotrang"
+                        >
+
+
+
+
+
+
+                    </ImageView>
+
+                    <TextView android:id="@+id/sportify"
+                        android:fontFamily="Azeret Mono"
+                        android:textStyle="bold"
+                        android:textSize="23sp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="37dp"
+                        android:layout_marginTop="-0.29dp"
+                        android:layout_width="132.52631568909dp"
+                        android:layout_height="39.526315689087dp"
+
+                        android:text="@string/sportify_string"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView android:id="@+id/__ng_k__t_i_kho_n"
+                android:fontFamily="Poppins"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@color/_bg__dangky_ek2_color"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="92dp"
+                android:layout_width="288dp"
+                android:layout_height="62dp"
+                android:text="@string/__ng_k__t_i_kho_n_string"
+                />
+
+            <TextView android:id="@+id/__n_v_i_ch_ng_t_i____c__th____ng_k__kh_a_h_c_r_n_luy_n_s_c_kh_e"
+                android:fontFamily="Poppins"
+                android:textSize="13sp"
+                android:textColor="@color/_bg__dangky_ek2_color"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="137dp"
+                android:layout_width="318.5dp"
+                android:layout_height="49.5dp"
+                android:text="@string/__n_v_i_ch_ng_t_i____c__th____ng_k__kh_a_h_c_r_n_luy_n_s_c_kh_e_string"
+                />
+
+
+
+            <ImageButton
+
+                android:layout_width="410dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="600dp"
+                android:src="@drawable/btnden"
+                android:background="@color/white"
+                android:layout_marginLeft="5dp"
+
+                />
             <CheckBox
                 android:id="@+id/isTeacher"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:text="Register As Teacher"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerPhone" />
-
+                android:layout_marginTop="540dp"
+                android:text="Đăng ký admin"
+                />
             <CheckBox
                 android:id="@+id/isStudent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:text="Register as Student"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/isTeacher"
-                app:layout_constraintTop_toBottomOf="@+id/registerPhone" />
 
-            <Button
+                android:layout_marginEnd="16dp"
+                android:text="Đăng ký người dùng"
+                android:layout_marginStart="240dp"
+                android:layout_marginTop="540dp"
+                />
+            <TextView
                 android:id="@+id/registerBtn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginEnd="16dp"
-                android:text="Create Account"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/isStudent" />
+                android:layout_width="410dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="600dp"
+                android:text="Đăng Ký Tài Khoản"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                />
 
-            <Button
-                android:id="@+id/gotoLogin"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="0dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:text="Login"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
 
-            <Button
+            <View   android:id="@+id/rectangle_39946"
+                android:background="@drawable/rectangle_39949_shape"
+                android:alpha="0.44999998807907"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="246dp"
+                android:layout_width="390dp"
+                android:layout_height="48dp" />
+
+            <EditText
+                android:id="@+id/registerName"
+                android:fontFamily="IBM Plex Sans"
+                android:textSize="14sp"
+                android:textColor="@color/t_n___y____color"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="258dp"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:hint="@string/t_n___y____string"
+                android:background="@null"
+                />
+
+            <View
+                android:background="@drawable/rectangle_39949_shape"
+                android:alpha="0.44999998807907"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="324dp"
+                android:layout_width="390dp"
+                android:layout_height="48dp" />
+
+            <EditText
+                android:id="@+id/registerEmail"
+                android:fontFamily="IBM Plex Sans"
+                android:textSize="14sp"
+                android:textColor="@color/t_n___y____color"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="335dp"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:hint="Email Đăng nhập"
+                android:background="@null"
+                />
+
+            <View
+                android:background="@drawable/rectangle_39948_shape"
+                android:alpha="0.44999998807907"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="402dp"
+                android:layout_width="390dp"
+                android:layout_height="48dp" />
+
+            <EditText android:id="@+id/registerPassword"
+                android:fontFamily="IBM Plex Sans"
+                android:textSize="14sp"
+                android:textColor="@color/t_n___y____color"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="415dp"
+                android:layout_width="200dp"
+                android:inputType="textPassword"
+                android:layout_height="28dp"
+                android:hint="Mật khẩu"
+
+                android:background="@null"
+                />
+
+            <EditText
+                android:id="@+id/registerPhone"
+                android:fontFamily="IBM Plex Sans"
+                android:textSize="14sp"
+                android:textColor="@color/t_n___y____color"
+                android:layout_marginLeft="31dp"
+                android:layout_marginTop="493dp"
+                android:layout_width="200dp"
+                android:layout_height="28dp"
+                android:hint="Số iện thoại"
+                android:inputType="phone"
+                android:background="@null"
+                />
+
+            <View   android:id="@+id/rectangle_39949"
+                android:background="@drawable/rectangle_39949_shape"
+                android:alpha="0.44999998807907"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="480dp"
+                android:layout_width="390dp"
+                android:layout_height="48dp" />
+            <View
+                android:layout_width="400dp"
+                android:layout_height="20dp"
+                android:background="@drawable/lienkettaikhoan"
+                android:layout_marginTop="690dp"
+                android:layout_marginStart="15dp"
+                />
+            <ImageButton
+
+                android:layout_width="102dp"
+                android:layout_height="58dp"
+                android:background="@drawable/face"
+                android:layout_marginTop="730dp"
+                android:layout_marginStart="30dp"
+                />
+            <ImageButton
                 android:id="@+id/dangkygmail"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:text="Đăng ký bằng gmial"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/gotoLogin" />
+                android:layout_width="102dp"
+                android:layout_height="58dp"
+                android:background="@drawable/gmail"
+                android:layout_marginTop="730dp"
+                android:layout_marginStart="160dp"
+                />
+            <ImageButton
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_width="102dp"
+                android:layout_height="58dp"
+                android:background="@drawable/iphone"
+                android:layout_marginTop="730dp"
+                android:layout_marginStart="300dp"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="860dp"
+
+                android:background="@drawable/backgroundtendky"
+                />
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="860dp"
+                android:text="Bạn có tài khoản?"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginStart="90dp"
+                />
+            <TextView
+                android:id="@+id/gotoLogin"
+                android:layout_width="170dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="860dp"
+                android:text="Đăng nhập"
+                android:textSize="20dp"
+                android:layout_marginStart="230dp"
+                android:gravity="center"
+                android:textColor="#484F88"
+                android:textStyle="bold"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

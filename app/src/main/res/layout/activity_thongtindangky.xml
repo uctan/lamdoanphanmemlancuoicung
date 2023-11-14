@@ -107,7 +107,7 @@
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="626dp"
                 android:layout_width="310dp"
-                android:layout_height="175dp" />
+                android:layout_height="145dp" />
 
             <ImageButton
                 android:id="@+id/savett"
@@ -130,14 +130,6 @@
                 android:layout_height="48dp"
                 android:text="@string/x_c_nh_n_string"
                 />
-            <ImageButton
-                android:id="@+id/thanhtoanmomo"
-                android:background="@drawable/rectangle_39938_shape"
-                android:layout_marginStart="66dp"
-                android:layout_marginTop="737dp"
-
-                android:layout_width="299dp"
-                android:layout_height="43dp" />
 
             <TextView android:id="@+id/t_ng_thanh_to_n"
                 android:fontFamily="Roboto"

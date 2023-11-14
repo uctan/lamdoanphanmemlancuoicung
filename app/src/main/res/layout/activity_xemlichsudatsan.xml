@@ -7,36 +7,17 @@
     tools:context=".quanlyhoadondatsan.xemlichsudatsan">
 
 
-    <LinearLayout
-        android:id="@+id/dateLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingStart="20dp"
-        android:paddingTop="20dp">
-
-        <TextView
-            android:id="@+id/ch_n_ng_y"
-            android:layout_width="71.3dp"
-            android:layout_height="27.3dp"
-            android:text="Chọn ngày"
-            android:textSize="13sp"
-            android:textColor="@color/_bg__group_1667_ek1_color"
-            android:textStyle="bold"/>
-
-        <ImageView
-            android:id="@+id/chongayxem"
-            android:layout_width="25dp"
-            android:layout_height="35.36dp"
-            android:layout_marginStart="19dp"
-            android:src="@drawable/chongnay"
-            android:contentDescription="colorful_write_and_wipe_clock_worksheets_1"/>
 
 
 
 
-    </LinearLayout>
+
+
+
+
+
+
+
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -47,6 +28,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="20dp"
             >
+
             <TextView
                 android:layout_width="256dp"
                 android:layout_height="44dp"
@@ -65,21 +47,40 @@
                 />
         </RelativeLayout>
         <TextView
-            android:layout_width="200dp"
+            android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginTop="130dp"
+            android:layout_marginTop="100dp"
             android:layout_marginStart="20dp"
-            android:text="Thống kê sân"
+            android:text="Thống kê ngày thuê sân"
             android:gravity="center_vertical"
             android:textStyle="bold"
             android:textSize="22sp"
             />
+        <ImageView
+            android:id="@+id/chongayxem"
+            android:layout_width="25dp"
+            android:layout_height="35.36dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginStart="19dp"
+            android:src="@drawable/chongnay"
+            android:contentDescription="colorful_write_and_wipe_clock_worksheets_1"
+            />
+        <TextView
+            android:id="@+id/xemngay"
+            android:layout_width="100dp"
+            android:layout_height="27.3dp"
+            android:text="Chọn ngày"
+            android:layout_marginTop="168dp"
+            android:layout_marginStart="50dp"
+            android:textSize="13sp"
+            android:textColor="@color/_bg__group_1667_ek1_color"
+            android:textStyle="bold"/>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewlíchudatsan"
-            android:layout_width="450dp"
+            android:layout_width="550dp"
             android:layout_height="410dp"
             android:layout_marginTop="210dp"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="5dp"
 
             />
 
@@ -87,8 +88,8 @@
         <RelativeLayout
             android:id="@+id/totalLayout"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_alignParentBottom="true"
+            android:layout_height="50dp"
+          android:layout_marginTop="680dp"
             android:layout_marginBottom="-1dp">
 
             <TextView
@@ -98,7 +99,9 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="16dp"
                 android:text="Tổng cộng"
-                android:textSize="18dp" />
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textSize="20dp" />
 
             <TextView
                 android:id="@+id/totalAmountTextView"
@@ -108,8 +111,9 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginEnd="172dp"
                 android:layout_marginBottom="16dp"
+                android:textStyle="bold"
                 android:text="0.0"
-                android:textSize="18dp" />
+                android:textSize="20dp" />
 
 
         </RelativeLayout>

@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.example.lamdoanphanmemlancuoicung.R;
 import com.example.lamdoanphanmemlancuoicung.admin.Admin;
 import com.example.lamdoanphanmemlancuoicung.admin.admindatsan.Booking;
+import com.example.lamdoanphanmemlancuoicung.admin.adminsanpham.ItemSpacingDecoration;
 import com.example.lamdoanphanmemlancuoicung.admin.thongtinhoadon.hoadonclass;
 import com.example.lamdoanphanmemlancuoicung.hoadonbanhang.khoahocAdapter;
 import com.example.lamdoanphanmemlancuoicung.hoadonbanhang.xemhoadondangkykhoahoc;
@@ -50,6 +51,7 @@ public class xemlichsukhoahoc extends AppCompatActivity {
             }
         });
         recyclerViewlichsukhoahoc.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewlichsukhoahoc.addItemDecoration(new ItemSpacingDecoration(16));
         List<hoadonclass> hoadonclassList = new ArrayList<>();
         adapter = new lichsukhoahocAdapter(this, hoadonclassList);
         recyclerViewlichsukhoahoc.setAdapter(adapter);

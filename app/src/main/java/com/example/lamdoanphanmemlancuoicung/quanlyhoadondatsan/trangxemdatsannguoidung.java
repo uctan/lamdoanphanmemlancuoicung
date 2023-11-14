@@ -13,6 +13,7 @@ import android.view.View;
 
 import com.example.lamdoanphanmemlancuoicung.R;
 import com.example.lamdoanphanmemlancuoicung.admin.admindatsan.Booking;
+import com.example.lamdoanphanmemlancuoicung.admin.adminsanpham.ItemSpacingDecoration;
 import com.example.lamdoanphanmemlancuoicung.user.manhinhuser;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -46,6 +47,7 @@ public class trangxemdatsannguoidung extends AppCompatActivity {
 
         recyclerViewhoadondatsan = findViewById(R.id.recyclerViewhoadondatsan);
         recyclerViewhoadondatsan.setLayoutManager(new LinearLayoutManager(this));
+        recyclerViewhoadondatsan.addItemDecoration(new ItemSpacingDecoration(16));
         List<Booking> bookingList = new ArrayList<>();
         adapter = new lichsuAdapter(this,bookingList);
         recyclerViewhoadondatsan.setAdapter(adapter);
